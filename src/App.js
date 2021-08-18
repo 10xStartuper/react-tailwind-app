@@ -46,6 +46,14 @@ function App() {
         onQueryChange={(newQuery) => {
           setQuery(newQuery);
         }}
+        orderBy={orderBy}
+        onOrderByChange={(newOrder) => {
+          setOrderBy(newOrder);
+        }}
+        sortBy={sortBy}
+        onSortByChange={(newSort) => {
+          setSortBy(newSort);
+        }}
       />
       <ul className="divide-y divide-gray-200">
         {filteredAppointments.map((appointment) => {

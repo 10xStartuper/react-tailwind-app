@@ -3,6 +3,14 @@ import { useState } from "react";
 
 const AddAppointment = () => {
   const [toggleForm, setToggleForm] = useState(false);
+  const clearData = {
+    ownerName: "",
+    petName: "",
+    aptDate: "",
+    aptTime: "",
+    aptNotes: "",
+  };
+  const [formData, setFormData] = useState(clearData);
   return (
     <div>
       <button
